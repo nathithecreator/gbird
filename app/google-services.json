@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "690399850523",
+    "firebase_url": "https://gbird-31eaf-default-rtdb.firebaseio.com",
+    "project_id": "gbird-31eaf",
+    "storage_bucket": "gbird-31eaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690399850523:android:460fe9b4f75e50383e88be",
+        "android_client_info": {
+          "package_name": "com.example.gbird"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHgrumSiyZfSRbNvfsLERLEHxDT89-95o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

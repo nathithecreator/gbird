@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecordAudio">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bar"
+        app:labelVisibilityMode="labeled"
+        android:background="@drawable/menushape"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="199dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/recordvectorclean"/>
+
+    <Chronometer
+        android:id="@+id/Chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="139dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/record"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:onClick="btnRecordPressed"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Record" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/stop"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:layout_toRightOf="@+id/record"
+        android:backgroundTint="@color/red"
+        android:onClick="btnStopPressed"
+        android:layout_marginLeft="40dp"
+        android:text="Stop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/play"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:layout_toRightOf="@+id/stop"
+        android:onClick="btnPlayPressed"
+        android:backgroundTint="@color/blue"
+        android:layout_marginLeft="40dp"
+        android:text="Play" />
+
+
+</RelativeLayout>

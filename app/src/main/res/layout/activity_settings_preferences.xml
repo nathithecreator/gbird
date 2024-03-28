@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsPreferences">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/gohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="showPopup"
+        app:backgroundTint="#FFFF00"
+        android:src="@drawable/baseline_backarrow" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Modelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="90dp"
+        android:text="Mode:"
+        android:layout_toLeftOf="@+id/themeSwitch"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/themeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Light"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:layout_below="@+id/titleTV"
+        android:textSize="20sp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/themeTV"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/metricSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/metricTV"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/Metriclabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="70dp"
+        android:layout_toLeftOf="@+id/metricSwitch"
+        android:text="METRIC:"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/metricTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="KILOMETER"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

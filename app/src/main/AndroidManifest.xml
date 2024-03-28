@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".UserSettings"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GBird"
+        tools:targetApi="31">
+        <activity
+            android:name=".SettingsPreferences"
+            android:exported="false" />
+        <activity
+            android:name=".MapHotspots"
+            android:exported="false" />
+        <activity
+            android:name=".RecordAudio"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".myBirds"
+            android:exported="false" />
+        <activity
+            android:name=".Editor"
+            android:exported="false" />
+        <activity
+            android:name=".discovery"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".signin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_map_api_key" />
+    </application>
+
+</manifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/homepage"
+    android:background="@drawable/xhome"
+    tools:context=".home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gbirdcolor" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bar"
+        app:labelVisibilityMode="labeled"
+        android:background="@drawable/menushape"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="70dp"
+        android:id="@+id/maplauncher"
+        android:backgroundTint="@color/black"
+        app:tint="@color/white"
+        android:src="@drawable/baseline_navigation_24"
+         />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="350dp"
+        android:layout_marginBottom="780dp"
+        android:id="@+id/menuButton"
+        android:backgroundTint="@color/gbirdcolor"
+        android:src="@drawable/baseline_menu_24"
+        android:foregroundTint="@color/white"
+         />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="350dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TODAY"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="380dp"
+        android:fontFamily="sans-serif-black"
+        android:text="11/08/2023"
+        android:textSize="38sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addsighting"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="530dp"
+        android:background="@drawable/buttonsignin"
+        android:text="ADD SIGHTING"
+        android:textSize="21sp" />
+
+
+</RelativeLayout>

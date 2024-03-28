@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">gBird</string>
+
+    <string name="my_map_api_key">AIzaSyCH9rymQPCk6z5EFQc9ICHrbgdRmghovOc</string>
+
+    <string name="ebird_api_key">sd5ns6ou2bso</string>
+</resources>
